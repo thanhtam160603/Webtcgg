@@ -3332,6 +3332,9 @@
     <Content Include="Views\Products\Partial_ItemsByCateId.cshtml" />
     <Content Include="Views\Products\Index.cshtml" />
     <Content Include="Views\Contact\Index.cshtml" />
+    <Content Include="Views\Menu\_MenuLeft.cshtml" />
+    <Content Include="Views\Products\ProductCategory.cshtml" />
+    <Content Include="Views\Products\Detail.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

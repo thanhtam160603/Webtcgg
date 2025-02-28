@@ -20,6 +20,18 @@ namespace Webtcgg
             );
             routes.MapRoute(
                 name: "CategoryProduct",
+                url: "danh-muc-san-pham/{alias}-{id}",
+                defaults: new { controller = "Products", action = "ProductCategory", id = UrlParameter.Optional },
+                namespaces: new[] { "Webtcgg.Controllers" }
+            );
+            routes.MapRoute(
+                name: "DetailProducts",
+                url: "chi-tiet/{alias}-p{id}",
+                defaults: new { controller = "Products", action = "Detail", alias = UrlParameter.Optional },
+                namespaces: new[] { "Webtcgg.Controllers" }
+            );
+            routes.MapRoute(
+                name: "Products",
                 url: "san-pham",
                 defaults: new { controller = "Products", action = "Index", alias = UrlParameter.Optional },
                 namespaces: new[] { "Webtcgg.Controllers" }
